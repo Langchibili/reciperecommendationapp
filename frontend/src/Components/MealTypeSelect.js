@@ -37,6 +37,13 @@ export default class MealTypeSelect extends React.Component {
                         itemIcon={() => <i className="fas fa-cookie"></i>} // Font Awesome cookie icon
                         setItemType={this.props.setItemType}
                     />
+                    <ItemType
+                        key='any'
+                        itemType="mealtype"
+                        itemName="any"
+                        itemIcon={() => <i className="fas fa-border-none"></i>} // Font Awesome dumbbell icon
+                        setItemType={this.props.setItemType}
+                    />
                 </div>
             </div>
         );

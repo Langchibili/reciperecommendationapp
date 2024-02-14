@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from 'react-router-dom'; // Import Link
-import Icon from '@mdi/react';
-import { mdiCookie } from '@mdi/js';
 
 export default class ItemType extends React.Component{
       constructor(props){
@@ -12,14 +10,14 @@ export default class ItemType extends React.Component{
       }
       render(){
           return( 
-            <div className="col s6">
-                <div className="setting-box z-depth-1 center">
-                    <Link onClick={()=>{this.props.setItemType(this.props.itemType,this.props.itemName)}}>
-                        {this.props.itemIcon()}
-                        <h6 style={{textTransform:"capitalize"}}>{this.props.itemName}</h6>
-                    </Link>
-                </div>
-            </div>
+                <Link onClick={()=>{this.props.setItemType(this.props.itemType,this.props.itemName)}}>
+                    <div className="col s6">
+                        <div className="setting-box z-depth-1 center">
+                            {this.props.itemIcon()}
+                            <h6 style={{textTransform:"capitalize"}}>{this.props.itemName}</h6>
+                            </div>
+                    </div>
+                </Link>
           )
       }
   }

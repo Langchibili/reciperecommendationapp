@@ -44,6 +44,13 @@ export default class TasteTypeSelect extends React.Component {
                         itemIcon={() => <i className="fas fa-pepper-hot"></i>} // Font Awesome hot pepper icon
                         setItemType={this.props.setItemType}
                     />
+                    <ItemType
+                        key='any'
+                        itemType="taste"
+                        itemName="any"
+                        itemIcon={() => <i className="fas fa-border-none"></i>} // Font Awesome dumbbell icon
+                        setItemType={this.props.setItemType}
+                    />
                 </div>
             </div>
         );

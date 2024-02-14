@@ -51,6 +51,13 @@ export default class IngredientSelect extends React.Component {
                         itemIcon={() => <i className="fas fa-carrot"></i>} // Font Awesome carrot icon
                         setItemType={this.props.setItemType}
                     />
+                    <ItemType
+                        key='any'
+                        itemType="ingredient"
+                        itemName="any"
+                        itemIcon={() => <i className="fas fa-border-none"></i>} // Font Awesome dumbbell icon
+                        setItemType={this.props.setItemType}
+                    />
                 </div>
             </div>
         );

@@ -35,7 +35,7 @@ export default class Recommendations extends React.Component{
     }
     render(){
         const defaultImageURL = 'https://w7.pngwing.com/pngs/156/887/png-transparent-local-food-ottawa-computer-icons-restaurant-others-miscellaneous-food-company.png';
-        return this.state.loading? <div className="col s8 pad-0 center"><h5 className="bot-20 sec-tit center">Recommendations Here</h5> <div class="loader"></div></div> : <div className="col s8 pad-0">
+        return this.state.loading? <div className="col s8 pad-0 center"><h5 className="bot-20 sec-tit center">Recommendations Here</h5> <div className="loader"></div></div> : <div className="col s8 pad-0">
                <h5 className="bot-20 sec-tit center ">Recommendations Here</h5>
                <div className="recommendations-container">
                 <div className="recipe-grid">

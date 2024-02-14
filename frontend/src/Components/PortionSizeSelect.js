@@ -30,7 +30,13 @@ export default class PortionSizeSelect extends React.Component {
                         itemIcon={() => <i className="fas fa-utensils"></i>} // Font Awesome utensils icon
                         setItemType={this.props.setItemType}
                     />
-                    {/* Add more portion size options as needed */}
+                    <ItemType
+                        key='any'
+                        itemType="portion"
+                        itemName="any"
+                        itemIcon={() => <i className="fas fa-border-none"></i>} // Font Awesome dumbbell icon
+                        setItemType={this.props.setItemType}
+                    />
                 </div>
             </div>
         );

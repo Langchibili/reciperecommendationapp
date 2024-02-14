@@ -30,7 +30,13 @@ export default class TimeSelect extends React.Component{
                         itemIcon={() => <i className="mdi mdi-clock-end" />}
                         setItemType={this.props.setItemType}
                     />
-                    {/* Add more time duration options as needed */}
+                    <ItemType
+                        key='any'
+                        itemType="time"
+                        itemName="any"
+                        itemIcon={() => <i className="fas fa-border-none"></i>} // Font Awesome dumbbell icon
+                        setItemType={this.props.setItemType}
+                    />
                 </div>
             </div>
 

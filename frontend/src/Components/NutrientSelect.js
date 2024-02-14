@@ -65,6 +65,13 @@ export default class NutrientSelect extends React.Component {
                         itemIcon={() => <i className="fas fa-dumbbell"></i>} // Font Awesome dumbbell icon
                         setItemType={this.props.setItemType}
                     />
+                    <ItemType
+                        key='any'
+                        itemType="nutrient"
+                        itemName="any"
+                        itemIcon={() => <i className="fas fa-border-none"></i>} // Font Awesome dumbbell icon
+                        setItemType={this.props.setItemType}
+                    />
                 </div>
             </div>
         );
